@@ -22,6 +22,9 @@ const loaderText = document.querySelector(".loader-text");
 //==================================================================================================
 // Functions
 //==================================================================================================
+//--------------------------
+// Private Functions
+//--------------------------
 const getValues = function() {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
@@ -115,6 +118,9 @@ const getTableCalc = async function(reqId) {
     return promise;
 };
 
+//--------------------------
+// Public Functions
+//--------------------------
 const solve = async function() {
     // Prepare Id
     const reqId = requestId;
